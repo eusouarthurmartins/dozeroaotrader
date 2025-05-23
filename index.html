@@ -119,3 +119,38 @@
 
 </body>
 </html>
+
+
+
+
+
+<!-- Botão WhatsApp Flutuante -->
+<a href="https://wa.me/5522992568259?text=Fiquei%20interessado%20no%20seus%20produtos%2C%20quero%20saber%20mais." 
+   class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" 
+       alt="WhatsApp" class="whatsapp-icon" />
+</a>
+
+<style>
+  .whatsapp-float {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 10px #00000055;
+    transition: transform 0.3s;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+
+  .whatsapp-icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+</style>
