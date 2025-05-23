@@ -48,29 +48,10 @@
       text-shadow: 0 0 10px #ff6600;
     }
 
-    .button-buy {
-      display: inline-block;
-      background: #ff6600;
-      color: #fff;
-      font-weight: 700;
-      font-size: 1.5rem;
-      padding: 18px 45px;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0 0 12px #ff6600;
-      transition: background 0.3s ease;
-      margin-bottom: 20px;
-    }
-
-    .button-buy:hover {
-      background: #e05500;
-      box-shadow: 0 0 20px #e05500;
-    }
-
     .benefits {
       text-align: left;
       max-width: 700px;
-      margin: 0 auto 40px;
+      margin: 40px auto;
       font-size: 1.15rem;
       color: #fff;
       list-style: none;
@@ -93,7 +74,7 @@
 
     .video-section {
       max-width: 720px;
-      margin: 40px auto;
+      margin: 40px auto 20px;
     }
 
     iframe {
@@ -117,7 +98,8 @@
     }
 
     #hotmart-sales-funnel {
-      margin-top: 30px;
+      margin: 30px auto;
+      max-width: 720px;
     }
 
     @media (max-width: 600px) {
@@ -129,10 +111,6 @@
       }
       .price {
         font-size: 2rem;
-      }
-      .button-buy {
-        font-size: 1.2rem;
-        padding: 15px 35px;
       }
       .benefits {
         font-size: 1rem;
@@ -147,13 +125,12 @@
 
   <div class="container">
     <h1>Última Chance: Oferta Especial MTI</h1>
-    <h2>Receba o Método Trader Inteligente por apenas:</h2>
-
+    <h2>Aproveite essa oportunidade com valor promocional:</h2>
     <p class="price">🔥 R$97,00 🔥</p>
 
-    <a href="https://pay.hotmart.com/S98634850D?off=zepj63xj&checkoutMode=10" target="_blank" rel="noopener" class="button-buy">
-      Quero garantir essa oferta!
-    </a>
+    <div class="video-section">
+      <iframe src="https://www.youtube.com/embed/kXc4-2jek5Y" allowfullscreen></iframe>
+    </div>
 
     <!-- HOTMART - Sales Funnel Widget -->
     <div id="hotmart-sales-funnel"></div>
@@ -169,10 +146,6 @@
       <li>Material atualizado e exemplos reais</li>
       <li>Garantia de 7 dias para testar sem risco</li>
     </ul>
-
-    <div class="video-section">
-      <iframe src="https://www.youtube.com/embed/kXc4-2jek5Y" allowfullscreen></iframe>
-    </div>
 
     <div class="contador" id="contador"></div>
   </div>
@@ -199,4 +172,3 @@
 
 </body>
 </html>
- 
