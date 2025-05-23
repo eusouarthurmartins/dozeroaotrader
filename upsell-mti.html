@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Upsell MTI - Método Trader Inteligente</title>
+  <title>🔥 Oferta Exclusiva - Método Trader Inteligente</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       background: linear-gradient(to bottom, #000000, #1c1c1c);
       color: #ffffff;
     }
@@ -21,8 +21,9 @@
     }
 
     h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       color: #00ff88;
+      margin-bottom: 10px;
     }
 
     h2 {
@@ -45,32 +46,50 @@
     }
 
     .preco {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       color: #00ff88;
       margin: 20px 0;
+      font-weight: bold;
     }
 
     .video-section {
       margin: 40px 0;
     }
 
+    .video-section h2 {
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
     iframe {
       width: 100%;
       max-width: 720px;
-      height: 400px;
+      height: 405px;
       border: none;
       border-radius: 10px;
-      box-shadow: 0 0 15px #00ff88;
+      box-shadow: 0 0 20px #00ff88;
     }
 
     .contador {
       font-size: 2rem;
       margin: 30px 0;
       color: #ffffff;
+      background: #111;
+      display: inline-block;
+      padding: 12px 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00ff88;
     }
 
     #hotmart-sales-funnel {
-      margin-top: 30px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.6rem; }
+      .mensagem, .preco, .contador { font-size: 1.4rem; }
+      iframe { height: 250px; }
     }
   </style>
 </head>
@@ -78,39 +97,37 @@
 
   <div class="container">
     <h1>OLHA O QUE EU SEPAREI PRA VOCÊ</h1>
-    <h2>Por apenas R$199,99 você recebe o <strong>MTI</strong></h2>
+    <h2>Por apenas <strong>R$199,99</strong> você recebe o <strong>MTI</strong></h2>
     <p>O método que está transformando vidas há mais de 4 anos!</p>
 
     <p class="mensagem">Você está a um clique da sua liberdade financeira.</p>
     <p class="preco">🔥 Apenas R$199,99 HOJE</p>
 
     <div class="video-section">
-      <h2>Veja esse vídeo antes:</h2>
+      <h2>Assista esse vídeo antes de decidir:</h2>
       <iframe src="https://www.youtube.com/embed/COLOQUE_ID_DO_VIDEO" allowfullscreen></iframe>
     </div>
 
     <div class="contador" id="contador"></div>
 
     <!-- HOTMART - Sales Funnel Widget -->
-    <!-- Sales Funnel Container -->
     <div id="hotmart-sales-funnel"></div>
 
-    <!-- Script de carregamento e inicialização -->
     <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
     <script>
       checkoutElements
         .init('salesFunnel')
         .mount('#hotmart-sales-funnel');
     </script>
-    <!-- Fim do Widget da Hotmart -->
+
   </div>
 
   <script>
-    // Contador regressivo de 10 minutos
+    // Contador regressivo de 10 minutos (600 segundos)
     let tempo = 600;
     const contador = document.getElementById("contador");
 
-    const atualizarContador = () => {
+    function atualizarContador() {
       const minutos = Math.floor(tempo / 60);
       const segundos = tempo % 60;
       contador.textContent = `⏳ Oferta expira em: ${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
@@ -120,11 +137,10 @@
       } else {
         contador.textContent = "⏰ Oferta encerrada!";
       }
-    };
+    }
 
     atualizarContador();
   </script>
 
 </body>
 </html>
- 
