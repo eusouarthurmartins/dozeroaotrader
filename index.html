@@ -2,171 +2,135 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Oferta Especial MTI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oferta Especial - Código da Alavancagem</title>
   <style>
-    body {
+    body, html {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      color: white;
-      background: #000 url('assets/fundomti1.jpg') no-repeat center center fixed;
-      background-size: cover;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      background-color: #000;
+      overflow-x: hidden;
     }
 
-    .overlay {
-      background: rgba(0, 0, 0, 0.85);
-      padding: 40px 20px;
-      min-height: 100vh;
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.3;
     }
 
     .container {
       max-width: 800px;
       margin: auto;
+      padding: 60px 20px;
       text-align: center;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95));
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ff88;
+      margin-top: 100px;
     }
 
     h1 {
-      font-size: 3rem;
-      color: #ffd700;
-      margin-bottom: 20px;
+      font-size: 2.5rem;
+      color: #00ff88;
     }
 
     p {
-      font-size: 1.3rem;
-      line-height: 1.6;
-      margin-bottom: 30px;
+      font-size: 1.2rem;
+      margin: 20px 0;
+      color: #ccc;
     }
 
-    .depoimentos {
-      background: #111;
-      border: 1px solid #ffd70066;
-      border-radius: 12px;
-      padding: 30px;
-      margin: 40px 0;
-    }
-
-    .depoimento {
-      margin-bottom: 20px;
-      font-style: italic;
-      color: #ddd;
-    }
-
-    .widget-container {
-      margin-top: 40px;
+    .preco {
+      font-size: 2rem;
+      color: #c0c0c0;
+      margin: 20px 0;
     }
 
     .contador {
       font-size: 2rem;
+      color: #00ff88;
+      margin: 20px 0;
       font-weight: bold;
-      color: #ffd700;
+    }
+
+    .depoimentos {
+      margin-top: 60px;
+      padding: 40px;
       background: #111;
       border-radius: 10px;
-      padding: 10px 20px;
-      display: inline-block;
-      margin: 20px 0;
-      box-shadow: 0 0 10px #ffd700aa;
     }
 
-    .video-container {
+    .depoimento {
+      font-style: italic;
+      margin-bottom: 20px;
+      border-left: 4px solid #00ff88;
+      padding-left: 20px;
+      color: #ccc;
+    }
+
+    #hotmart-sales-funnel {
       margin-top: 40px;
-      border: 2px solid #ffd70055;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .video-container iframe {
-      width: 100%;
-      height: 400px;
-    }
-
-    @media (max-width: 768px) {
-      h1 { font-size: 2rem; }
-      .contador { font-size: 1.5rem; }
-      .video-container iframe { height: 250px; }
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <div class="container">
-      <h1>Parabéns por adquirir o Código da Alavancagem!</h1>
-      <p>
-        O Código da Alavancagem é um produto incrível, mas se você quer entender absolutamente TUDO sobre o mercado e aprender a operar de forma inteligente, o <strong>MTI – Método Trader Inteligente</strong> é pra você.<br><br>
-        Como o próprio nome já diz: É o método para operar do jeito certo. Aqui você vai aprender todas as técnicas que realmente funcionam para lucrar com consistência. E acreditem, por apenas R$199,99 você leva o MTI hoje!
-      </p>
 
-      <!-- CONTADOR REGRESSIVO -->
-      <div id="contador" class="contador">15:00</div>
+<video autoplay muted loop class="background-video">
+  <source src="https://cdn.coverr.co/videos/coverr-a-stock-market-graph-7573/1080p.mp4" type="video/mp4">
+  Seu navegador não suporta vídeo de fundo.
+</video>
 
-      <!-- VÍDEO YOUTUBE -->
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/kXc4-2jek5Y"  title="MTI Vídeo" frameborder="0" allowfullscreen></iframe>
-      </div>
+<div class="container">
+  <h1>🎉 Parabéns por adquirir o eBook!</h1>
+  <p>Com ele, você está dando o primeiro passo no mercado e vai aprender o básico para começar com segurança.</p>
 
-      <!-- DEPOIMENTOS -->
-      <div class="depoimentos">
-        <h2 style="color:#ffd700;">O que dizem sobre o MTI:</h2>
-        <div class="depoimento">"O MTI mudou completamente minha forma de operar. Hoje tenho confiança e consistência nas minhas operações!" – <strong>Lucas S.</strong></div>
-        <div class="depoimento">"Já fiz vários cursos, mas nenhum é tão direto e completo quanto o MTI. Vale cada centavo." – <strong>Ana Paula T.</strong></div>
-        <div class="depoimento">"Com o MTI, finalmente entendi como o mercado realmente funciona. Gratidão!" – <strong>Thiago R.</strong></div>
-      </div>
+  <p>Agora, se você quer realmente aprender como funcionam as **alavancagens**, com **explicações em vídeo aulas** passo a passo, tenho uma oferta única pra você:</p>
 
-      <!-- HOTMART - Sales Funnel Widget -->
-      <div id="hotmart-sales-funnel" class="widget-container"></div>
-      <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
-      <script>
-        checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
-      </script>
-    </div>
-  </div>
+  <h2 class="preco">💥 Curso Código da Alavancagem por apenas <strong>R$99,99</strong></h2>
 
-  <!-- SCRIPT DO CONTADOR REGRESSIVO -->
+  <div class="contador" id="contador"></div>
+
+  <!-- HOTMART - Sales Funnel Widget -->
+  <!--- sales funnel container --->
+  <div id="hotmart-sales-funnel"></div>
+
+  <!--- script load and setup --->
+  <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
   <script>
-    let tempo = 15 * 60; // 15 minutos em segundos
-    const contadorEl = document.getElementById("contador");
-
-    function atualizarContador() {
-      const minutos = Math.floor(tempo / 60);
-      const segundos = tempo % 60;
-      contadorEl.textContent = 
-        `${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
-      tempo--;
-
-      if (tempo >= 0) {
-        setTimeout(atualizarContador, 1000);
-      } else {
-        contadorEl.textContent = "00:00";
-      }
-    }
-
-    atualizarContador();
+    checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
   </script>
+  <!-- HOTMART - Sales Funnel Widget -->
+
+  <div class="depoimentos">
+    <h2>💬 O que dizem sobre o Código da Alavancagem</h2>
+    <div class="depoimento">"Com o curso, finalmente entendi como funcionam as alavancagens. Lucro em 3 dias!" — André S.</div>
+    <div class="depoimento">"As videoaulas são bem explicativas, direto ao ponto. Valeu cada centavo." — Mariana L.</div>
+    <div class="depoimento">"Já tinha lido muito, mas o vídeo realmente me fez entender na prática." — Carlos M.</div>
+  </div>
+</div>
+
+<script>
+  // Contador regressivo de 10 minutos
+  let tempo = 600;
+  const contador = document.getElementById("contador");
+
+  const atualizarContador = () => {
+    const minutos = Math.floor(tempo / 60);
+    const segundos = tempo % 60;
+    contador.textContent = `Oferta expira em: ${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+    tempo--;
+    if (tempo >= 0) setTimeout(atualizarContador, 1000);
+    else contador.textContent = "Oferta encerrada!";
+  };
+  atualizarContador();
+</script>
+
 </body>
 </html>
-
-
-
-
-<!-- Ícone flutuante do WhatsApp com SVG verde oficial -->
-<a href="https://wa.me/5522992568259?text=Ol%C3%A1%2C+acabei+de+ver+sua+oferta+e+quero+saber+mais+sobre+o+MTI+-+M%C3%A9todo+Trader+Inteligente%21" target="_blank" aria-label="Fale conosco no WhatsApp" class="whatsapp-float">
-  <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
-    <circle cx="12" cy="12" r="12" fill="#25D366"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.672.149-.198.297-.767.967-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.173.198-.297.298-.495.099-.198.05-.371-.025-.52-.075-.148-.672-1.611-.92-2.204-.242-.579-.487-.5-.672-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487.709.306 1.26.489 1.69.625.71.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347z" fill="#fff"/>
-  </svg>
-</a>
-
-<style>
-  .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    z-index: 9999;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  .whatsapp-float:hover {
-    transform: scale(1.1);
-  }
-</style>
