@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MTI - Sua Liberdade Financeira</title>
+  <title>Upsell MTI - Método Trader Inteligente</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #000, #1a1a1a);
-      color: #fff;
+      background: linear-gradient(to bottom, #000000, #1c1c1c);
+      color: #ffffff;
     }
 
     .container {
@@ -31,8 +31,14 @@
       margin-top: 10px;
     }
 
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #dddddd;
+    }
+
     .mensagem {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin: 30px 0;
       color: #00ff88;
       font-weight: bold;
@@ -86,15 +92,17 @@
     <div class="contador" id="contador"></div>
 
     <!-- HOTMART - Sales Funnel Widget -->
-    <!--- sales funnel container --->
+    <!-- Sales Funnel Container -->
     <div id="hotmart-sales-funnel"></div>
 
-    <!--- script load and setup --->
+    <!-- Script de carregamento e inicialização -->
     <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
     <script>
-      checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+      checkoutElements
+        .init('salesFunnel')
+        .mount('#hotmart-sales-funnel');
     </script>
-    <!-- HOTMART - Sales Funnel Widget -->
+    <!-- Fim do Widget da Hotmart -->
   </div>
 
   <script>
@@ -105,10 +113,13 @@
     const atualizarContador = () => {
       const minutos = Math.floor(tempo / 60);
       const segundos = tempo % 60;
-      contador.textContent = `Oferta expira em: ${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+      contador.textContent = `⏳ Oferta expira em: ${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
       tempo--;
-      if (tempo >= 0) setTimeout(atualizarContador, 1000);
-      else contador.textContent = "Oferta encerrada!";
+      if (tempo >= 0) {
+        setTimeout(atualizarContador, 1000);
+      } else {
+        contador.textContent = "⏰ Oferta encerrada!";
+      }
     };
 
     atualizarContador();
